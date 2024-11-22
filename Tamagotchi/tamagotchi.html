@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego - Tamagotchi RPG</title>
+  <link rel="stylesheet" href="tamagotchi.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Bienvenido a Tamagotchi RPG</h1>
+    </header>
+
+    <main>
+      <section class="game-section">
+        <div class="game-area">
+          <img src="fondo.jpg" alt="Fondo del juego" class="background-img">
+          <img src="papa.png" alt="Personaje" class="character">
+
+          <div class="status-bars">
+            <div class="status-bar">
+              <label for="hunger">Hambre:</label>
+              <progress id="hunger" max="100" value="50"></progress>
+            </div>
+            <div class="status-bar">
+              <label for="boredom">Aburrimiento:</label>
+              <progress id="boredom" max="100" value="50"></progress>
+            </div>
+            <div class="status-bar">
+              <label for="sleep">Sueño:</label>
+              <progress id="sleep" max="100" value="50"></progress>
+            </div>
+            <div class="status-bar">
+              <label for="dirt">Suciedad:</label>
+              <progress id="dirt" max="100" value="50"></progress>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="eat-btn">Comer</button>
+            <button id="sleep-btn">Dormir</button>
+            <button id="clean-btn">Limpiarse</button>
+            <button id="play-btn">Jugar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Tamagotchi RPG</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
